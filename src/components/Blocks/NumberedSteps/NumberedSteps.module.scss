@@ -1,0 +1,136 @@
+/*
+    Numbered Steps Block Styles
+*/
+@use "@/styles/mixins" as *;
+
+.numberedSteps {
+    --gap: 32px;
+
+    color: var(--background);
+    font-family: var(--font-family-poppins);
+}
+
+.blockHeading {
+    margin-bottom: 24px;
+
+    font-size: 38px;
+    text-align: center;
+    font-weight: 800;
+    line-height: 70px;
+
+    @include min-width( m ) {
+        font-size: 48px;
+    }
+
+    @include min-width( xl ) {
+        font-size: 55px;
+    }
+
+}
+
+.blockDescription {
+    font-size: 16px;
+    line-height: 193%;
+    text-align: center;
+
+    opacity: .6;
+
+    @include min-width( l ) {
+        font-size: 20px;
+    }
+}
+
+.steps {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--gap);
+
+    margin-top: 16px;
+
+    @include min-width( m ) {
+        margin-top: 40px;
+        flex-flow: row wrap;
+    }
+
+    @include min-width( l ) {
+        margin-top: 48px;
+    }
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+
+    text-align: center;
+
+    position: relative;
+
+    margin-bottom: 32px;
+
+    @include min-width( m ) {
+        margin-bottom: 0;
+
+        flex: 0 0 calc((100% - (var(--gap))) / 2);
+        max-width: calc((100% - (var(--gap))) / 2);
+    }
+
+    @include min-width( xl ) {
+        flex: 0 0 calc((100% - (var(--gap) * 3)) / 4);
+        max-width: calc((100% - (var(--gap) * 3)) / 4);
+
+        &:not(:nth-child(4n)) {
+            &::after {
+                content: "";
+                position: absolute;
+                top: 146px;
+                right: -30%;
+                transform: translateY(-50%);
+                width: 44%;
+                height: 35px;
+                background: url("/assets/curve-1.svg") no-repeat;
+            }
+
+            &:nth-child(2n) {
+                &::after {
+                    top: 156px;
+                    right: -32%;
+                    background: url("/assets/curve-2.svg") no-repeat;
+                }
+            }
+        }
+    }
+}
+
+.stepTitle {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: .5px;
+}
+
+.stepDescription {
+    margin-top: 8px;
+    font-size: 17px;
+    line-height: 160%;
+    letter-spacing: 0;
+
+    opacity: .6;
+
+    max-width: 85%;
+
+    @include min-width( m ) {
+        max-width: none;
+    }
+}
+
+.stepNumber {
+    color: var(--purple);
+
+    margin-right: 4px;
+}
+
+.stepImage {
+    margin: 0 0 16px;
+}

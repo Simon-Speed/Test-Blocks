@@ -1,0 +1,34 @@
+/*
+    Panel Styles for the TabbedSlider block.
+*/
+@use "@/styles/mixins" as *;
+
+.panel {
+    display: none;
+    grid-template-columns: 32px 1fr 32px;
+    grid-gap: 0;
+    align-items: center;
+
+    position: relative;
+
+    &.active {
+        display: grid;
+    }
+
+    @include min-width( m ) {
+        grid-gap: 12px;
+        grid-template-columns: 39px 1fr 39px;
+    }
+}
+
+.navButton {
+    cursor: pointer;
+}
+
+.navButtonLeft {
+    justify-self: start;
+}
+
+.navButtonRight {
+    justify-self: end;
+}

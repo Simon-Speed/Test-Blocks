@@ -1,0 +1,186 @@
+[
+    {
+        "id": "slider-1",
+        "type": "TabbedSlider",
+        "title": "Featured Products",
+        "fields": {
+            "heading": {
+                "id": "heading-1",
+                "label": "Heading",
+                "type": "text",
+                "value": "Discover the right SupaLite roof for your home"
+            },
+            "description": {
+                "id": "description-1",
+                "label": "Description",
+                "type": "textarea",
+                "value": "SupaLite roof systems turn conservatories, orangeries and home extensions into beautiful, comfortable spaces you'll use every day. Whether you're replacing an old roof or starting a new build, we have a roof that fits. All engineered in the UK and installed by approved specialists nationwide."
+            },
+            "tabs": {
+                "id": "tabs-1",
+                "label": "Tabs",
+                "type": "tabs",
+                "items": [
+                    {
+                        "id": "tab-1",
+                        "label": "Tab 1",
+                        "subfields": {
+                            "subheading": {
+                                "id": "subheading-1",
+                                "label": "Subheading",
+                                "type": "text",
+                                "value": "Our Range"
+                            },
+                            "cards": {
+                                "id": "cards-1",
+                                "label": "Cards",
+                                "type": "array",
+                                "items": [
+                                    {
+
+                                        "id": "card-1",
+                                        "title": "Conservatory roofs",
+                                        "description": "Tiled, glass and hybrid roof systems for all types of conservatory shapes. Available for new builds and replacements.",
+                                        "image": "/assets/slide-1.jpg",
+                                        "link": ["/products/1", "Explore conservatory roofs", "_blank"]
+                                    },
+                                    {
+                                        "id": "card-2",
+                                        "title": "Conservatory roofs",
+                                        "description": "Tiled, glass and hybrid roof systems for all types of conservatory shapes. Available for new builds and replacements.",
+                                        "image": "/assets/slide-2.jpg",
+                                        "link": ["/products/2", "Explore conservatory roofs", "_blank"]
+                                    },
+                                    {
+                                        "id": "card-3",
+                                        "title": "Conservatory roofs",
+                                        "description": "Tiled, glass and hybrid roof systems for all types of conservatory shapes. Available for new builds and replacements.",
+                                        "image": "/assets/slide-3.jpg",
+                                        "link": ["/products/3", "Explore conservatory roofs", "_blank"]
+                                    },
+                                    {
+                                        "id": "card-4",
+                                        "title": "Conservatory roofs",
+                                        "description": "Tiled, glass and hybrid roof systems for all types of conservatory shapes. Available for new builds and replacements.",
+                                        "image": "/assets/slide-1.jpg",
+                                        "link": ["/products/4", "Explore conservatory roofs", "_blank"]
+                                    },
+                                    {
+                                        "id": "card-5",
+                                        "title": "Conservatory roofs",
+                                        "description": "Tiled, glass and hybrid roof systems for all types of conservatory shapes. Available for new builds and replacements.",
+                                        "image": "/assets/slide-3.jpg",
+                                        "link": ["/products/5", "Explore conservatory roofs", "_blank"]
+                                    }
+                                ]
+                            }
+                        } 
+                    },
+                    {
+                        "id": "tab-2",
+                        "label": "Tab 2",
+                        "subfields": {
+                            "subheading": {
+                                "id": "subheading-2",
+                                "label": "Subheading",
+                                "type": "text",
+                                "value": "Products"
+                            },
+                            "cards": {
+                                "id": "cards-2",
+                                "label": "Cards",
+                                "type": "array",
+                                "items": [
+                                    {
+                                        "id": "card-6",
+                                        "title": "Sky Lantern",
+                                        "description": "Tiled, glass and hybrid roof systems for all types of conservatory shapes. Available for new builds and replacements.",
+                                        "image": "/assets/slide-4.jpg",
+                                        "link": ["/products/6", "Explore conservatory roofs", "_blank"]
+                                    },
+                                    {
+                                        "id": "card-7",
+                                        "title": "Sky Lantern",
+                                        "description": "Tiled, glass and hybrid roof systems for all types of conservatory shapes. Available for new builds and replacements.",
+                                        "image": "/assets/slide-5.jpg",
+                                        "link": ["/products/6", "Explore conservatory roofs", "_blank"]
+                                    },
+                                    {
+                                        "id": "card-8",
+                                        "title": "Sky Lantern",
+                                        "description": "Tiled, glass and hybrid roof systems for all types of conservatory shapes. Available for new builds and replacements.",
+                                        "image": "/assets/slide-6.jpg",
+                                        "link": ["/products/7", "Explore conservatory roofs", "_blank"]
+                                    },
+                                    {
+                                        "id": "card-9",
+                                        "title": "Sky Lantern",
+                                        "description": "Tiled, glass and hybrid roof systems for all types of conservatory shapes. Available for new builds and replacements.",
+                                        "image": "/assets/slide-5.jpg",
+                                        "link": ["/products/8", "Explore conservatory roofs", "_blank"]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "settings": {
+            "backgroundColor": "beige"
+        }
+    },
+    {
+        "id": "steps-1",
+        "type": "NumberedSteps",
+        "title": "How It Works",
+        "fields": {
+            "heading": {
+                "id": "heading",
+                "label": "Heading",
+                "type": "text",
+                "value": "How does it work?"
+            },
+            "description": {
+                "id": "description",
+                "label": "Description",
+                "type": "textarea",
+                "value": "Get an instant online offer, post your bricks for free (or alternatively we’ll collect them from your home or workplace), and get paid the day after we receive them. Simple. Selling LEGO® online has never been so easy! Just follow the simple steps below:"
+            },
+            "steps": {
+                "id": "steps",
+                "label": "Steps",
+                "type": "array",
+                "items": [
+                    {
+                        "id": "step-1",
+                        "title": "Weigh your LEGO®",
+                        "description": "Pop your LEGO® bricks in a bag and weigh them. Then select the weight to the closest kg from our drop-down menu.",
+                        "image": "/assets/step-1.png"
+                    },
+                    {
+                        "id": "step-2",
+                        "title": "Get an instant offer",
+                        "description": "We'll offer you the highest price for your LEGO® online! Simply accept and checkout to continue.",
+                        "image": "/assets/step-2.png"
+                    },
+                    {
+                        "id": "step-3",
+                        "title": "Post it for free",
+                        "description": "Package up your LEGO® and take it to your local Evri drop off point or arrange a home collection.",
+                        "image": "/assets/step-3.png"
+                    },
+                    {
+                        "id": "step-4",
+                        "title": "Get paid",
+                        "description": "Choose either bank transfer or PayPal and see the money land in your bank the very next day!",
+                        "image": "/assets/step-4.png"
+                    }
+                ]
+            }
+        },
+        "settings": {
+            "backgroundColor": "white"
+        }
+    }
+]

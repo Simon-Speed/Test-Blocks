@@ -1,0 +1,46 @@
+/*
+    Tab Styles
+*/
+@use "@/styles/mixins" as *;
+
+.tab {
+    font-family: var(--font-family-source-sans);
+    font-size: 25px;
+    line-height: 100%;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-variant-caps: all-small-caps;
+    color: var(--background);
+
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+    cursor: pointer;
+
+    transition: border-color ease .3s;
+    transform: translateY(3px);
+
+    &::after {
+        content: "";
+        display: block;
+        width: calc(100% + 4px);
+        height: 5px;
+        border-radius: 10px;
+        background-color: transparent;
+        margin-top: 6px;
+        transition: ease .3s;
+        transform: translateX(-2px);
+    }
+
+    &.active {
+        &::after {
+            background-color: var(--orange);
+        }
+    }
+
+    @include min-width( m ) {
+        font-size: 30px;
+    }
+}

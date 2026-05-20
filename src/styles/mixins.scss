@@ -1,0 +1,28 @@
+/*
+    SCSS Mixins
+*/
+@use "sass:map";
+@use "sass:meta";
+@use "sass:math";
+
+// Mixin for min-width media queries
+@mixin min-width( $size ) {
+    $value: "";
+
+    $breakpoints: (
+        "s": 640,
+        "m": 768,
+        "l": 1024,
+        "xl": 1280,
+    );
+
+    @if meta.type-of( $size ) == "number" {
+        $value: $size;
+    } @else {
+        $value: map.get($breakpoints, $size);
+    }
+
+    @media screen and (min-width: #{ math.div($value, 16)}em) {
+        @content;
+    }
+}

@@ -1,0 +1,29 @@
+main.main {
+  background-color: var(--c-background);
+  padding-bottom: 10dvh;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  padding-top: 20vh;
+  padding-bottom: 20vh;
+
+  h1 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: var(--c-foreground);
+  }
+
+  p {
+    font-size: 1.25rem;
+    color: var(--c-foreground);
+  }
+
+  a {
+    color: var(--orange);
+    text-decoration: underline;
+  }
+}

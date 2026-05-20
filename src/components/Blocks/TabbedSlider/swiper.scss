@@ -1,0 +1,93 @@
+/*
+    Custom Swiper styles for TabbedSlider component.
+*/
+@use "@/styles/mixins" as *;
+
+.swiper {
+    width: 100%;
+
+    grid-column: 2 / span 1;
+}
+
+.swiper-horizontal > .swiper-pagination {
+    position: relative;
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+
+    .swiper-pagination-bullet {
+        height: 3px;
+        width: 32px;
+
+        background: var(--background);
+        opacity: 0.3;
+        border-radius: 10px;
+
+        margin: 0;
+
+        cursor: pointer;
+
+        &-active {
+            opacity: 1;
+        }
+    }
+
+    @include min-width( m ) {
+        .swiper-pagination-bullet {
+            width: 78px;
+        }
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: var(--background);
+    border: 2px solid var(--background);
+
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: ease .15s;
+
+    svg {
+        width: 12px;
+        height: 15px;
+
+        * {
+            fill: var(--white);
+            transition: ease .15s;
+        }
+        
+    }
+
+    &:hover:not(.swiper-button-disabled) {
+        background-color: var(--orange);
+        border-color: var(--orange);
+    }
+
+    &.swiper-button-disabled {
+        background-color: transparent;
+        cursor: default;
+
+        svg * {
+            fill: var(--background)
+        }
+    }
+
+    @include min-width( m ) {
+        height: 39px;
+        width: 39px;
+
+        svg {
+            width: 16px;
+            height: 15px;
+        }
+    }
+}
