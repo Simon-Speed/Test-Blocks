@@ -13,7 +13,7 @@ export default function Home() {
             This is a demo of of the two blocks provided in the Figma design built within a Next.js App. The blocks are rendered using a BlockRenderer component that takes in the block data from a JSON file, mimicking data imported from a CMS, and renders the appropriate block based on the type.
           </p>
           <p>
-            The code for this project can be found in the following <a href="https://github.com/your-repo-link">repository</a>.
+            The code for this project can be found in the following <a href="https://github.com/Simon-Speed/Test-Blocks">repository</a>.
           </p>
         </div>
       </section>
