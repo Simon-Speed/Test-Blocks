@@ -79,12 +79,12 @@ function getBlankSlideCount(totalSlides: number, slidesPerView: number) {
         onSwiper={syncSlidesPerView}
         onBreakpoint={syncSlidesPerView}
         breakpoints={{
-          640: {
+          768: {
             slidesPerView: 2,
             slidesPerGroup: 2,
             spaceBetween: 26,
           },
-          1024: {
+          1280: {
             slidesPerView: 3,
             slidesPerGroup: 3,
             spaceBetween: 26,
